@@ -30,7 +30,7 @@ function invocarMetodo (objeto, metodo) {
   // Invoca ese método
   // Nada necesita ser devuelto ("returned")
   // Tu código:
-  
+  objeto[metodo]()
 }
 
 function multiplicarNumeroDesconocidoPorCinco (objetoMisterioso) {
@@ -99,6 +99,8 @@ function actualizarPassword (usuario, nuevaPassword) {
   // Reemplaza la contraseña existente en el objeto "usuario" con el valor de "nuevagPassword"
   // Devuelve el objeto
   // Tu código:
+  usuario.password = nuevaPassword;
+  return usuario
 }
 
 function agregarAmigo (usuario, nuevoAmigo) {
